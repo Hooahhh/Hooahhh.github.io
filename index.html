@@ -127,36 +127,46 @@
   <div class="row mb-4 mx-auto">
     
     
+      <div class="col-12 col-md-4 m-auto">
+        <a href="/2019/09/28/浅谈PHP代码审计/" target="_self">
+          <img src="http://i1.fuimg.com/700400/aff97fa0fb6b2226.jpg" srcset="/img/loading.gif" alt="浅谈PHP代码审计" class="img-fluid rounded z-depth-3 index-thumbnails">
+        </a>
+      </div>
+    
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/09/27/hello-world/">
-        <p class="h4 index-header">Hello World</p>
+      <a href="/2019/09/28/浅谈PHP代码审计/">
+        <p class="h4 index-header">浅谈PHP代码审计</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-
-More info: Writing
-Run server1$ hexo server
-
-More info: Server
-Generate static files1$ hexo generate
-
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-
-More info: Deployment
-</div>
+          <div class="index-text mb-1">此文浅谈PHP审计，结合一些代码审计的CTF题目
+1.extract变量覆盖
+首先需要知道变量覆盖漏洞形成的原理是自己定义的参数替换掉了代码中原有的变量值，一般是函数的使用不当造成的。
+一般引发变量覆盖漏洞的函数有: extract()、parse_str()。其中重点是变量是否可控。
+首先了解extract()函数语法：
+extract(array,extract_rules,prefix)
+extract()定义：extract() 该函数使用数组键名作为变量名，使用数组键值作为变量值。针对数组中的每个元素，将在当前符号表中创建对应的一个变量。 
+比如：
+123456&lt;?php$a = 1;$b = array(&apos;a&apos;=&gt;&apos;2&apos;);extract($b);print($a);?&gt;
+输出结果为2 所以变量a的值成功的被覆盖掉了。
+但是extract()第二参数很重要，决定了已有变量会不会被覆盖掉。
+" srcset="/img/loading.gif
+第一种是设置第二参数为EXTR_OVERWRITE，第二种是设置第二参数为E</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-09-27&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-09-28&nbsp;&nbsp;
         
         
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/PHP%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1">PHP代码审计</a>&nbsp;
+          
         
       </div>
     </div>
