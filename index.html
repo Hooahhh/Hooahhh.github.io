@@ -141,7 +141,10 @@
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1"></div>
+          <div class="index-text mb-1">版本：thinkphp:2.1
+环境:docker
+漏洞出现在Dispatcher.class.php这个文件中的url解析，代码太多了，只贴关键代码
+12345678910111213141516171819202122$depr = C(&apos;URL_PATHINFO_DEPR&apos;);// 分析PATHINFO信息self::getPathInfo();if(!self::routerCheck())&#123;   // 检测路由规则 如果没有则按默认规则调度URL    $paths = explode($depr,trim($_SERVER[&apos;PATH_INFO&apos;],&apos;/&apos;));    $var  =  array();    if (C(&apos;APP_GROUP_LIST&apos;) &amp;&amp; !isset($_GET[C(&apos;VAR_GROUP&apos;)]))&#123;        $var[C(&apos;VAR_GROUP&apos;)] = in_array(strtolowe</div>
         </div>
       </a>
 
