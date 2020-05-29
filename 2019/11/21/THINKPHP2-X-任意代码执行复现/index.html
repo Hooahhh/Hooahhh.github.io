@@ -133,7 +133,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$res = preg_replace(&apos;@(\w+)&apos;.$depr.&apos;([^&apos;.$depr.&apos;\/]+)@e&apos;, &apos;$var[\&apos;\\1\&apos;]=&quot;\\2&quot;;&apos;, implode($depr,$paths));</span><br><span class="line">           $_GET   =  array_merge($var,$_GET);</span><br></pre></td></tr></table></figure>
 <p>preg_replace函数e修饰符会将第二个参数当作代码执行，后面赋值时结合双引号执行变量，造成代码执行。</p>
 <p>exp：index.php?s=module/action/param1/${@phpinfo()}，不写马了。</p>
-<p><img src="http://q1kt2tw0a.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20191121232135.jpg" style="zoom:50%;"></p>
+<p><img src="http://q1kt2tw0a.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20191121232135.jpg" srcset="/img/loading.gif" style="zoom:50%;"></p>
 
             <hr>
           </div>
@@ -254,6 +254,8 @@
 <script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
 <script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
 <script src="/js/main.js" ></script>
+
+  <script src="/js/lazyload.js" ></script>
 
 
   
