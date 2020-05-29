@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2019/11/21/THINKPHP2-X-%E4%BB%BB%E6%84%8F%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%A4%8D%E7%8E%B0/</loc>
+    <lastmod>2020-05-29</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2019/09/28/%E6%B5%85%E8%B0%88PHP%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/</loc>
     <lastmod>2020-05-29</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2019/11/27/weblogic%20cve-2017-10271%E5%A4%8D%E7%8E%B0/</loc>
-    <lastmod>2020-05-29</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2019/11/21/THINKPHP2-X-%E4%BB%BB%E6%84%8F%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%A4%8D%E7%8E%B0/</loc>
     <lastmod>2020-05-29</lastmod>
   </url>
 </urlset>
